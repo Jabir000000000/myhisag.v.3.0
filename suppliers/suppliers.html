@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Suppliers</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="app-header">
+    <div class="header-left"><div class="logo">📊 Business Hisab</div></div>
+    <div class="header-center"><input type="text" placeholder="🔎 Search..." class="search-bar"></div>
+    <div class="header-right">
+      <a href="notifications.html"><button class="icon-btn">🔔</button></a>
+      <button class="icon-btn">⚙️</button>
+      <div class="profile-menu">
+        <span class="profile-name">👤 Admin ▾</span>
+        <ul class="dropdown">
+          <li><a href="profile.html">Profile</a></li>
+          <li><a href="settings.html">Settings</a></li>
+          <li><a href="logout.html">Logout</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <div class="layout">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <ul>
+        <li><a href="index.html">Dashboard</a></li>
+        <li><a href="accounts.html">Accounts</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="sales.html">Sales</a></li>
+        <li><a href="purchases.html">Purchases</a></li>
+        <li><a href="customers.html">Customers</a></li>
+        <li class="active"><a href="suppliers.html">Suppliers</a></li>
+        <li><a href="reports.html">Reports</a></li>
+        <li><a href="settings.html">Settings</a></li>
+      </ul>
+    </aside>
+
+    <!-- Main -->
+    <main class="main-content">
+      <h1>📦 Suppliers</h1>
+
+      <div class="top-actions">
+        <input type="text" placeholder="Search supplier...">
+        <a href="add-supplier.html"><button class="btn-save">+ Add Supplier</button></a>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Company</th>
+            <th>Phone</th>
+            <th>Balance</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Rahim Traders</td>
+            <td>Dhaka</td>
+            <td>017XXXXXXXX</td>
+            <td>৳ 50,000</td>
+            <td>
+              <a href="supplier-details.html"><button class="btn-edit">View</button></a>
+              <a href="edit-supplier.html"><button class="btn-edit">Edit</button></a>
+              <button class="btn-delete">Delete</button>
+            </td>
+          </tr>
+          <tr>
+            <td>ABC Suppliers</td>
+            <td>Chittagong</td>
+            <td>018XXXXXXXX</td>
+            <td>৳ 25,000</td>
+            <td>
+              <a href="supplier-details.html"><button class="btn-edit">View</button></a>
+              <a href="edit-supplier.html"><button class="btn-edit">Edit</button></a>
+              <button class="btn-delete">Delete</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+  </div>
+</body>
+</html>
